@@ -17,3 +17,8 @@ this one cloaks as Canvas but you can always change it
  javascript:(function(){let url = prompt("about:blank spoofer | what website do you want to spoof");win = window.open();win.document.body.style.margin = '0';win.document.body.style.height = '100vh';var iframe = win.document.createElement('iframe');iframe.style.border = 'none';iframe.style.width = '100%';iframe.style.height = '100%';iframe.style.margin = '0';iframe.src = url;win.document.body.appendChild(iframe);})();
  ```
  this script is very helpful and can bypass goguardian and hapara
+# Golden Cookie Notify
+```js
+javascript:(function() {Game.LoadMod('https://kiraacorsac.github.io/GoldenCookieObserver/GoldenCookieObserver.js'); }());
+```
+this script is helpful and makes a little beep when a golden cookie pops up in cookie clicker!
