@@ -37,4 +37,19 @@ its a javascript console, very useful
 javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement("style");autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains("auto-clicker-target")) {e.target.classList.remove("auto-clicker-target");} else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains("auto-clicker-target")) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.bod
 ```
 the name can explain itself
+# Tab renamer
+```js 
+javascript:(function(){var title=prompt("New title?");document.title=title})();
+```
+allows you to rename tabs
+# Script Remover
+```js
+ javascript:if(frames.length){alert('Sorry, doesn\'t work in frames.');}else{while((es=document.getElementsByTagName('script')).length){es[0].parentNode.removeChild(es[0]);}es=document.all;for(i=0;i<es.length;++i){e=es[i];for(p in e){if(!p.indexOf('on')&&e[p]){e[p]=null;}}}document.write(document.documentElement.outerHTML);document.close();onerror=function(){return true}}//4umi.com
+ ```
+ all it does is remove all active scripts you have
+ # link highlighter
+ ```js
+ javascript:for(nIx5Bs=0;nIx5Bs<document.all.length;nIx5Bs++){if(document.all[nIx5Bs].tagName=='A'){with(document.all[nIx5Bs].style){if(backgroundColor=='yellow'){void(backgroundColor=document.bgColor)}else{void(backgroundColor='yellow')}}}}
+ ```
+ useful for dodging links
 
