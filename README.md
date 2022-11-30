@@ -1,6 +1,6 @@
 # Antischool
 # please Star this repo if you use any of the bookmarklets and find them helpful
-
+this repo is insanley useful, it currently only contanis bookmarklets but soon ill add more
 # iframe popup
 a cool thing to help end internet censorship using iframes, can stop the schoolspyware from focusing you onto taps (hapara)
 ```js
