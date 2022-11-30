@@ -52,4 +52,13 @@ allows you to rename tabs
  javascript:for(nIx5Bs=0;nIx5Bs<document.all.length;nIx5Bs++){if(document.all[nIx5Bs].tagName=='A'){with(document.all[nIx5Bs].style){if(backgroundColor=='yellow'){void(backgroundColor=document.bgColor)}else{void(backgroundColor='yellow')}}}}
  ```
  useful for dodging links
-
+# LTBEEF 3kh0 Extension remover
+```js
+javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js';document.body.appendChild(a);}())
+```
+this one is very very useful!
+# Ingot AntiExt
+```js
+javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js';document.body.appendChild(a);}())
+```
+this is 3kh0s extension remover except with a better UI
