@@ -7,3 +7,8 @@ a cool thing to help end internet censorship using iframes, can stop the schools
 javascript:var frame = document.createElement('iframe'); frame.src="[LINK HERE]"; frame.style.position="fixed"; frame.style.top="0%"; frame.style.right="0%";frame.style.height="100%";frame.style.width="100%"; frame.style.zIndex="100000"; document.body.appendChild(frame);
 ```
 Replace [link here] with your link, made by me
+# Tab Cloaker
+```js
+javascript:(function()%7B(function() %7B%0A    document.title %3D "Dashboard"%3B%0A    var link %3D document.querySelector("link%5Brel*%3D%27icon%27%5D") %7C%7C document.createElement(%27link%27)%3B%0A    link.type %3D %27image%2Fx-icon%27%3B%0A    link.rel %3D %27shortcut icon%27%3B%0A    link.href %3D %27https%3A%2F%2Faasd.instructure.com%2Ffavicon.ico%27%3B%0A    document.getElementsByTagName(%27head%27)%5B0%5D.appendChild(link)%3B%0A    alert(%27tab hidden! %27)%0A%7D)()%3B%7D)()%3B
+```
+this one cloaks as Canvas but you can always change it
