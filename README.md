@@ -62,3 +62,13 @@ this one is very very useful!
 javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js';document.body.appendChild(a);}())
 ```
 this is 3kh0s extension remover except with a better UI
+# securly
+```js
+javascript:(function()%7Bconst loadScript %3D async(url) %3D> %7B%0A const response %3D await fetch(url)%0A const script %3D await response.text()%0A eval(script)%0A%7D%0A%0Aconst scriptUrl %3D "https%3A%2F%2Fraw.githubusercontent.com%2Fsecurlyunblocker%2FSU1%2Fmain%2Fmain.js"%0AloadScript(scriptUrl)%7D)()%3B
+```
+this is called securly unbl0cker and it has proxies and other very useful tools
+# Avo
+```js
+javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Avo/avo.min.js';document.body.appendChild(a);}())
+```
+this is a lightweight bookmaarklet made by FogNetwork
