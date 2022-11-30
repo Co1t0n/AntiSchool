@@ -7,6 +7,12 @@
     color: rgb(240, 230, 230);
     background-color: transparent;
 }
+#particles{
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; }
+
 
 
 #particles-js{
