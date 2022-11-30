@@ -22,3 +22,14 @@ this one cloaks as Canvas but you can always change it
 javascript:(function() {Game.LoadMod('https://kiraacorsac.github.io/GoldenCookieObserver/GoldenCookieObserver.js'); }());
 ```
 this script is helpful and makes a little beep when a golden cookie pops up in cookie clicker!
+# Inspect element/ xray
+```js
+javascript:function loadScript(scriptURL) %7B var scriptElem = document.createElement('SCRIPT'); scriptElem.setAttribute('language', 'JavaScript'); scriptElem.setAttribute('src', scriptURL); document.body.appendChild(scriptElem);%7DloadScript('http://westciv.com/xray/thexray.js');
+```
+this script is just inspect element (no console)
+# Eval.js
+```js
+javascript:var s=document.createElement('script');s.type='text/javascript';s.src='https://sheeptester.github.io/javascripts/eval.js';document.body.appendChild(s);void(0);
+```
+its a javascript console, very useful
+
