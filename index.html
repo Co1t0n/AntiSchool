@@ -1,57 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
     <head>
-
-      <meta charset="utf-8"/>
-     
-      <meta content="width=device-width, initial-scale=1" name="viewport"/>
-      <link rel="stylesheet" href="css/index.css">
+        <meta charset='utf8'>
     </head>
     <body>
-  <div class="header-right">
-   
-  </div>
-</div>
-       <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-<!--Cards Start Here -->        
-<div class="gameshell">
-  <a href="/idlebreakout" class="">
-    <div class="card-header">Idle Breakout</div>
-    <div class="card-main">
- 
-    
-    </div>
-  </a>
+        <div id='ruffle'></div>
+        <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+        <script>
+var swfobject = {};
 
-  <a href="/ruffle/tosstheturtle" class="">
-    <div class="card-header">Toss The Turtle</div>
-    <div class="card-main">
-   
-      <div class="main-description"></div>
-    </div>
-  </a>
-      <a href="/games/retro-bowl" class="">
-    <div class="card-header">Retro Bowl</div>
-    <div class="card-main">
-     
-      <div class="main-description"></div>
-    </div>
-  </a>
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
     
-          <a href="/games/CClicker" class="">
-    <div class="card-header">Cookie Clicker </div>
-    <div class="card-main">
-     
-      <div class="main-description"></div>
-    </div>
-  </a>
-    
-              <a href="/games/FireboyAndWatergirl" class="">
-    <div class="card-header">Fireboy And Watergirl</div>
-    <div class="card-main">
-      
-      <div class="main-description"></div>
-    </div>
-  </a>
-</div>
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://e9x.github.io/ruffle-example/1on1soccer_24.swf', 'ruffle', 500, 500);
+        </script>
     </body>
 </html>
